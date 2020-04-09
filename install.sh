@@ -19,7 +19,7 @@ sudo sed -i 's/local\(\s*\)all\(\s*\)all\(\s*\)peer/local\1all\2all\3\md5/g' /et
 sudo service postgresql restart
 
 # Install python3 and required python modules
-sudo apt-get -y install python3 python3-pip
+sudo apt-get -y install python3 python3-pip python3-dateutil
 sudo -H pip3 install -r https://raw.githubusercontent.com/frepple/frepple/6.0.0/requirements.txt
 
 # Install the frePPLe binary .deb package and the necessary dependencies.
